@@ -1,0 +1,95 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/corners_bg"
+    tools:context="top.spiiiiiiiiiitter.home_control.curtainControlFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp">
+
+            <Button
+                android:id="@+id/ct1_on"
+                android:layout_width="69dp"
+                android:layout_height="37dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="49dp"
+                android:layout_marginStart="38dp"
+                android:text="开" />
+
+            <Button
+                android:id="@+id/ct1_stop"
+                android:layout_width="69dp"
+                android:layout_height="37dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/ct1_on"
+                android:layout_marginEnd="37dp"
+                android:text="停" />
+
+            <Button
+                android:id="@+id/ct1_off"
+                android:layout_width="69dp"
+                android:layout_height="37dp"
+                android:layout_alignTop="@+id/ct1_on"
+                android:layout_centerHorizontal="true"
+                android:text="关" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="33dp"
+                android:text="窗帘1"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp">
+
+
+            <Button
+                android:id="@+id/ct2_on"
+                android:layout_width="69dp"
+                android:layout_height="37dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="37dp"
+                android:layout_marginTop="37dp"
+                android:text="开" />
+
+            <Button
+                android:id="@+id/ct2_stop"
+                android:layout_width="69dp"
+                android:layout_height="37dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/ct2_on"
+                android:layout_marginEnd="38dp"
+                android:text="停" />
+
+            <Button
+                android:id="@+id/ct2_off"
+                android:layout_width="69dp"
+                android:layout_height="37dp"
+                android:layout_alignTop="@+id/ct2_on"
+                android:layout_centerHorizontal="true"
+                android:text="关" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

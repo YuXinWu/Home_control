@@ -1,0 +1,113 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/corners_bg"
+    tools:context="top.spiiiiiiiiiitter.home_control.projectorControlFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <Switch
+                android:id="@+id/projector_power"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="27dp"
+                android:text="开关" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/projector_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="上" />
+
+            <Button
+                android:id="@+id/projector_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/projector_up"
+                android:layout_below="@+id/projector_up"
+                android:layout_marginTop="9dp"
+                android:text="OK" />
+
+            <Button
+                android:id="@+id/projector_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/projector_ok"
+                android:layout_below="@+id/projector_ok"
+                android:layout_marginTop="11dp"
+                android:text="下" />
+
+            <Button
+                android:id="@+id/projector_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/projector_down"
+                android:layout_below="@+id/projector_down"
+                android:layout_marginTop="11dp"
+                android:text="菜单" />
+
+            <Button
+                android:id="@+id/projector_signal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/projector_menu"
+                android:layout_below="@+id/projector_menu"
+                android:layout_marginTop="11dp"
+                android:text="信号源" />
+
+            <Button
+                android:id="@+id/projector_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/projector_ok"
+                android:layout_marginEnd="12dp"
+                android:layout_toStartOf="@+id/projector_ok"
+                android:text="左" />
+
+            <Button
+                android:id="@+id/projector_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/projector_down"
+                android:layout_marginStart="12dp"
+                android:layout_toEndOf="@+id/projector_ok"
+                android:text="右" />
+
+            <Button
+                android:id="@+id/projector_zoom_out"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/projector_left"
+                android:layout_alignTop="@+id/projector_menu"
+                android:text="缩放" />
+
+            <Button
+                android:id="@+id/projector_zoom_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/projector_signal"
+                android:layout_alignStart="@+id/projector_right"
+                android:text="缩进" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</FrameLayout>

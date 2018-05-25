@@ -1,0 +1,92 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/corners_bg"
+    tools:context="top.spiiiiiiiiiitter.home_control.ACFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/ac_power"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:text="开/关" />
+
+            <Button
+                android:id="@+id/temperature_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/ac_power"
+                android:layout_below="@+id/ac_power"
+                android:layout_marginTop="12dp"
+                android:text="温度+" />
+
+            <Button
+                android:id="@+id/temperature_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/temperature_up"
+                android:layout_below="@+id/temperature_up"
+                android:text="温度-" />
+
+            <Button
+                android:id="@+id/ac_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/temperature_down"
+                android:layout_alignBottom="@+id/temperature_down"
+                android:layout_marginEnd="22dp"
+                android:layout_toStartOf="@+id/temperature_down"
+                android:text="模式" />
+
+            <Button
+                android:id="@+id/ac_timing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/temperature_down"
+                android:layout_alignBottom="@+id/temperature_down"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/temperature_up"
+                android:text="定时" />
+
+            <Button
+                android:id="@+id/ac_windspeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/ac_mode"
+                android:layout_below="@+id/ac_mode"
+                android:layout_marginTop="19dp"
+                android:text="风速" />
+
+            <Button
+                android:id="@+id/ac_direction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/ac_windspeed"
+                android:layout_alignBottom="@+id/ac_windspeed"
+                android:layout_toEndOf="@+id/ac_mode"
+                android:text="风向" />
+
+            <Button
+                android:id="@+id/ac_windsweep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/ac_timing"
+                android:layout_alignTop="@+id/ac_direction"
+                android:text="扫风" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>
